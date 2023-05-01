@@ -77,6 +77,7 @@
         <fast-uuid.version>0.2.0</fast-uuid.version>
         <jakarta.inject-api.version>2.0.1</jakarta.inject-api.version>
         <graalvm.version>22.3.1</graalvm.version>
+        <json-patch.version>1.13</json-patch.version>
     </properties>
 
     <scm>
@@ -464,6 +465,11 @@
                 <artifactId>js-scriptengine</artifactId>
                 <version>${graalvm.version}</version>
             </dependency>
+            <dependency>
+                <groupId>com.github.java-json-tools</groupId>
+                <artifactId>json-patch</artifactId>
+                <version>${json-patch.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -493,6 +499,7 @@
         <module>tracing-slf4j</module>
         <module>tracing-spring</module>
         <module>caching</module>
+        <module>reflection</module>
     </modules>
 
     <build>
